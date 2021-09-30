@@ -212,12 +212,12 @@
   color: #fff;
   border: 3px solid #8497ff;
   font-weight: 700;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  display: flex;
+  background: linear-gradient(
+90deg, #1860de, #8497ff, #e2abff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
 }
 
 @media screen and (max-width: 600px) {
