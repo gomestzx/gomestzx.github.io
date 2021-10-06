@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Euclid Flex Bold";
+  src: url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.eot");
+  src: url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.svg#Euclid Flex Bold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Euclid Flex";
+  src: url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.eot");
+  src: url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.svg#Euclid Flex")
+      format("svg");
+}
+
 * {
   font-family: Euclid Flex Bold, sans-serif;
   text-decoration: none;
@@ -210,16 +240,16 @@
   color: #fff;
   border: 3px solid #8497ff;
   font-weight: 700;
-  background: linear-gradient(
-90deg, #1860de, #8497ff, #e2abff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
+  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
 }
 
 @media screen and (max-width: 600px) {
   .title {
+    margin-top: -40px;
     font-size: 45px;
     width: auto;
     height: auto;
