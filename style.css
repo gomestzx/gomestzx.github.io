@@ -62,7 +62,7 @@
   padding: 20px 20px;
   text-decoration: none;
   color: #010204 !important;
-  font-weight: 500;
+  font-weight: 800;
   background-color: #fff;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
@@ -267,6 +267,10 @@
   }
 }
 
+.about {
+  margin-bottom: -60px;
+}
+
 .row-about {
   display: flex;
   justify-content: center;
@@ -284,13 +288,16 @@
 }
 
 .item-about p {
-  margin: 0;
+  margin: 2px;
   font-family: Euclid Flex, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .item-about:nth-child(2) {
   padding: 30px;
   border-radius: 8px;
+  margin-top: -95px;
 }
 
 .item-about h3 {
@@ -416,6 +423,7 @@
 
 .item-skills p {
   font-family: Euclid Flex, sans-serif;
+  font-weight: 800;
 }
 
 /* PROJECTS */
@@ -494,7 +502,7 @@
 .row-project p {
   margin: 0;
   width: 300px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
 }
@@ -502,7 +510,7 @@
 .row-project-reverse p {
   margin: 0;
   width: 300px;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
 }
@@ -632,6 +640,7 @@ h4 {
 
 .item-contact p {
   font-family: Euclid Flex, sans-serif;
+  font-weight: 700;
 }
 
 .email-contact {
@@ -647,6 +656,7 @@ h4 {
 .made {
   margin-top: 30px;
   font-family: Euclid Flex, sans-serif;
+  font-weight: 700;
 }
 
 .made a {
@@ -656,6 +666,7 @@ h4 {
 .hype4 {
   margin-top: 10px;
   font-family: Euclid Flex, sans-serif;
+  font-weight: 700;
 }
 
 .hype4 a {
