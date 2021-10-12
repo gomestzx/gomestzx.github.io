@@ -368,6 +368,9 @@
   .perfil {
     height: 350px;
   }
+  .about {
+    margin-bottom: -30px;
+}
 }
 
 /* SKILLS */
