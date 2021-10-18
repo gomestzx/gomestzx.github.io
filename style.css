@@ -62,7 +62,7 @@
   padding: 20px 20px;
   text-decoration: none;
   color: #010204 !important;
-  font-weight: 800;
+  font-weight: 400;
   background-color: #fff;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
@@ -230,7 +230,7 @@
   padding: 20px 60px;
   border-radius: 30px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   background: linear-gradient(135deg, #2064da, #f3aeff);
   margin: 5px;
 }
@@ -239,7 +239,7 @@
   border-radius: 30px;
   color: #fff;
   border: 3px solid #8497ff;
-  font-weight: 700;
+  font-weight: 400;
   background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -260,10 +260,10 @@
     padding: 20px;
   }
   .cv {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
   .btn-projects {
-    padding: 10px 40px;
+    padding: 10px 20px;
   }
 }
 
@@ -276,7 +276,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -90px;
+  margin-top: 40px;
 }
 
 .item-about {
@@ -291,7 +291,7 @@
   margin: 2px;
   font-family: Euclid Flex, sans-serif;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .item-about:nth-child(2) {
@@ -343,7 +343,8 @@
 
 .social-icons {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .social-icons img {
@@ -357,6 +358,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .row-about {  
+    margin-top: 0;
+  }
   .item-about:nth-child(2) {
     margin-top: -80px;
   }
@@ -364,6 +368,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    padding: 10px 0;
   }
   .perfil {
     height: 350px;
@@ -426,7 +431,7 @@
 
 .item-skills p {
   font-family: Euclid Flex, sans-serif;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 /* PROJECTS */
@@ -505,7 +510,7 @@
 .row-project p {
   margin: 0;
   width: 300px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
 }
@@ -513,7 +518,7 @@
 .row-project-reverse p {
   margin: 0;
   width: 300px;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   font-family: Euclid Flex, sans-serif;
 }
@@ -643,7 +648,7 @@ h4 {
 
 .item-contact p {
   font-family: Euclid Flex, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .email-contact {
@@ -651,7 +656,7 @@ h4 {
   padding: 20px 60px;
   border-radius: 30px;
   color: #fff;
-  font-weight: 700;
+  font-weight: 400;
   background: linear-gradient(135deg, #2064da, #f3aeff);
   margin: 25px;
 }
@@ -659,7 +664,7 @@ h4 {
 .made {
   margin-top: 30px;
   font-family: Euclid Flex, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .made a {
@@ -669,7 +674,7 @@ h4 {
 .hype4 {
   margin-top: 10px;
   font-family: Euclid Flex, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .hype4 a {
