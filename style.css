@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
-  font-family: Euclid Flex Bold, sans-serif;
   text-decoration: none;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Navbar */
@@ -35,10 +34,9 @@
   padding: 20px 20px;
   text-decoration: none;
   color: #010204 !important;
-  font-weight: 400;
+  font-weight: 500;
   background-color: #fff;
   font-size: 16px;
-  font-family: Euclid Flex, sans-serif;
 }
 
 .header .contact {
@@ -185,11 +183,10 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  letter-spacing: -3.1px;
+  letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
 .btns {
   display: flex;
@@ -200,7 +197,8 @@
 }
 .btns a {
   font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
+
+font-weight: 700;  font-family: "Montserrat", sans-serif;
 }
 .cv {
   padding: 20px 60px;
@@ -265,7 +263,6 @@
 
 .item-about p {
   margin: 2px;
-  font-family: Euclid Flex, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -334,7 +331,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .row-about {  
+  .row-about {
     margin-top: 0;
   }
   .item-about:nth-child(2) {
@@ -351,7 +348,7 @@
   }
   .about {
     margin-bottom: -30px;
-}
+  }
 }
 
 /* SKILLS */
@@ -406,7 +403,6 @@
 }
 
 .item-skills p {
-  font-family: Euclid Flex, sans-serif;
   font-weight: 400;
 }
 
@@ -488,7 +484,6 @@
   width: 300px;
   font-weight: 400;
   font-size: 16px;
-  font-family: Euclid Flex, sans-serif;
 }
 
 .row-project-reverse p {
@@ -496,7 +491,6 @@
   width: 300px;
   font-weight: 400;
   font-size: 16px;
-  font-family: Euclid Flex, sans-serif;
 }
 
 .item-project {
@@ -539,7 +533,7 @@
   color: #fff;
   font-weight: 500;
   background: linear-gradient(135deg, #2064da, #f3aeff);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .encurts {
@@ -624,7 +618,6 @@ h4 {
 }
 
 .item-contact p {
-  font-family: Euclid Flex, sans-serif;
   font-weight: 400;
 }
 
@@ -633,15 +626,15 @@ h4 {
   padding: 20px 60px;
   border-radius: 30px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   background: linear-gradient(135deg, #2064da, #f3aeff);
   margin: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .made {
   margin-top: 30px;
-  font-family: Euclid Flex, sans-serif;
+
   font-weight: 400;
 }
 
@@ -651,7 +644,7 @@ h4 {
 
 .hype4 {
   margin-top: 10px;
-  font-family: Euclid Flex, sans-serif;
+
   font-weight: 400;
 }
 
