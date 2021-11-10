@@ -1,32 +1,4 @@
-@font-face {
-  font-family: "Euclid Flex Bold";
-  src: url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.eot");
-  src: url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/027c43c3c3be1acd777e82e4b7dc3a6b.svg#Euclid Flex Bold")
-      format("svg");
-}
-
-@font-face {
-  font-family: "Euclid Flex";
-  src: url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.eot");
-  src: url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/7ca06963c2e0a99b0a44cad7b4f84ba6.svg#Euclid Flex")
-      format("svg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
   font-family: Euclid Flex Bold, sans-serif;
@@ -34,6 +6,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  
 }
 
 /* Navbar */
@@ -212,9 +185,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  letter-spacing: -2.1px;
+  letter-spacing: -3.1px;
   white-space: nowrap;
   margin-bottom: -1px;
+  font-family: 'Montserrat', sans-serif;
+  
 }
 .btns {
   display: flex;
@@ -225,6 +200,7 @@
 }
 .btns a {
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
 }
 .cv {
   padding: 20px 60px;
@@ -563,6 +539,7 @@
   color: #fff;
   font-weight: 500;
   background: linear-gradient(135deg, #2064da, #f3aeff);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .encurts {
@@ -659,6 +636,7 @@ h4 {
   font-weight: 400;
   background: linear-gradient(135deg, #2064da, #f3aeff);
   margin: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .made {
