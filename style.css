@@ -224,7 +224,7 @@ font-weight: 700;  font-family: "Montserrat", sans-serif;
 @media screen and (max-width: 600px) {
   .title {
     margin-top: -40px;
-    font-size: 45px;
+    font-size: 40px;
     width: auto;
     height: auto;
     max-width: auto;
@@ -349,6 +349,11 @@ font-weight: 700;  font-family: "Montserrat", sans-serif;
   .about {
     margin-bottom: -30px;
   }
+  .item-about h3 {
+    
+    font-size: 20px;
+  }
+  
 }
 
 /* SKILLS */
