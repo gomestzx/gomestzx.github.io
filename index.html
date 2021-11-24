@@ -5,27 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- <link
-      href="//db.onlinewebfonts.com/c/c0152cb744b60409569eeee46b8897f3?family=Euclid"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="//db.onlinewebfonts.com/c/027c43c3c3be1acd777e82e4b7dc3a6b?family=Euclid+Flex+Bold"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="//db.onlinewebfonts.com/c/7ca06963c2e0a99b0a44cad7b4f84ba6?family=Euclid+Flex"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfólio - Felipe Matheus</title>
   </head>
   <body>
     <!-- NAVBAR -->
 
-    <header class="header">
+    <header class="header" data-aos="fade-in" data-aos-delay="50"
+    data-aos-duration="2500">
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
         ><span class="navicon"></span
@@ -54,12 +41,16 @@
 
     <div class="about">
       <div class="row-about">
-        <div class="item-about">
-          <img class="perfil" src="./assets/perfil.png" alt="Perfil" />
+        <div class="item-about" data-aos="slide-right" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000">
+          <img class="perfil"  src="./assets/perfil.png" alt="Perfil" />
         </div>
-        <div class="item-about">
+        <div class="item-about" data-aos="slide-up" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="2000">
           
-          <h1 class="title">Felipe Matheus</h1>
+          <h1 class="title" >Felipe Matheus</h1>
           
           <h3>Sobre mim</h3>
           <p>
@@ -78,7 +69,8 @@
       </div>
     </div>
 
-    <div class="social-icons">
+    <div class="social-icons" data-aos="zoom-in-up" data-aos-delay="50"
+    data-aos-duration="2000">
       <a href="http://linkedin.com/in/gomestzx"
         ><img src="./assets/linkedin.png" alt=""
       /></a>
@@ -108,7 +100,8 @@
         </svg>
       </span>
 
-      <div class="skills">
+      <div class="skills" data-aos="zoom-in-up" data-aos-delay="50"
+      data-aos-duration="2000">
         <div class="row-skills">
           <div class="item-skills">
             <h1>Skills</h1>
@@ -121,7 +114,9 @@
             >
             </lord-icon>
           </div>
-          <div class="item-skills">
+          <div class="item-skills" data-aos="slide-left" data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="2000">
             <h4>Front-end</h4>
             <p>HTML5, CSS3, JavaScript, ReactJS, NextJS e ChakraUI</p>
             <h4>Backend</h4>
@@ -142,7 +137,8 @@
     <!-- PROJECTS -->
     <div class="div" id="projects"></div>
     <div class="project">
-      <div class="title-project">
+      <div class="title-project" data-aos="zoom-out-down" data-aos-delay="50"
+      data-aos-duration="2000">
         <h1>Projetos</h1>
         <a href="https://github.com/gomestzx" target="_blank">
           <spam> Clique aqui para ver todos os reposítórios </spam>
@@ -150,10 +146,13 @@
       </div>
 
       <div class="row-project">
-        <div class="item-project">
+        <div class="item-project" data-aos="slide-right" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="3000">
           <img src="./assets/4geek.png" />
         </div>
-        <div class="item-project">
+        <div class="item-project" data-aos="fade-in" data-aos-delay="50"
+        data-aos-duration="2500">
           <h2>wallpaper4geek</h2>
           <p>Site de compartilhamento de wallpapers</p>
           <h3>Tecnologias usadas:</h3>
@@ -164,7 +163,8 @@
         </div>
       </div>
       <div class="row-project-reverse">
-        <div class="item-project">
+        <div class="item-project" data-aos="fade-in" data-aos-delay="50"
+        data-aos-duration="2500">
           <h2>EncurtsApp</h2>
           <p>Aplicativo encurtador de links usando a api do bit.ly</p>
           <h3>Tecnologias usadas:</h3>
@@ -177,15 +177,20 @@
             DEMO
           </a>
         </div>
-        <div class="item-project">
+        <div class="item-project" data-aos="slide-left" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="3000">
           <img src="./assets/encurts.png" class="encurts" />
         </div>
       </div>
       <div class="row-project">
-        <div class="item-project">
+        <div class="item-project" data-aos="slide-right" data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="3000">
           <img src="./assets/covidapp.png" class="covid" />
         </div>
-        <div class="item-project">
+        <div class="item-project" data-aos="fade-in" data-aos-delay="50"
+        data-aos-duration="2500">
           <h2>CovidApp</h2>
           <p>
             App que consome a api do brasil.io para mostrar dados do Covid19
@@ -205,11 +210,13 @@
     </div>
 
     <!--  Contact -->
-    <div class="div" id="contact"></div>
-    <div class="contact">
+    
+    <div class="contact" id="contact" data-aos="zoom-in-up" data-aos-delay="50"
+    data-aos-duration="2000">
       <h2 class="title-contact">Contato</h2>
 
-      <div class="row-contact">
+      <div class="row-contact" data-aos="zoom-in-up" data-aos-delay="50"
+      data-aos-duration="2000">
         <div class="item-contact">
           <img src="./assets/perfil.png" alt="" />
         </div>
@@ -218,9 +225,10 @@
           <p>Será um prazer te responder ✌️</p>
         </div>
       </div>
-      <a href="mailto:felipematheusdev@gmail.com" class="email-contact"
-        >felipematheusdev@gmail.com</a
-      >
+      <div data-aos="fade-up-right" data-aos-delay="50"
+      data-aos-duration="2500">
+        <a href="mailto:felipematheusdev@gmail.com" class="email-contact">felipematheusdev@gmail.com</a>
+    </div>
 
       <p class="made">
         Made with ❤️ by <a href="https://instagram.com/gomestzx">gomestzx</a>
@@ -228,4 +236,8 @@
       <p class="hype4">Inspired 💡 by <a href="https://hype4.com">hype4</a></p>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

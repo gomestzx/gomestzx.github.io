@@ -10,6 +10,11 @@
 
 /* Navbar */
 
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .header {
   width: 100%;
   z-index: 3;
@@ -198,7 +203,8 @@
 .btns a {
   font-size: 17px;
 
-font-weight: 700;  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 .cv {
   padding: 20px 60px;
@@ -350,10 +356,8 @@ font-weight: 700;  font-family: "Montserrat", sans-serif;
     margin-bottom: -30px;
   }
   .item-about h3 {
-    
     font-size: 20px;
   }
-  
 }
 
 /* SKILLS */
