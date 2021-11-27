@@ -274,7 +274,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .item-about {
@@ -341,7 +341,6 @@ body {
 .social-icons {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
 }
 
 .social-icons img {
@@ -400,13 +399,14 @@ body {
   text-align: center;
   margin-top: 80px;
 }
-.skills h1 {
-  font-size: 70px;
+.title-skills {
+  font-size: 60px;
   color: #fff;
   letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
   padding: 15px;
+  text-align: center;
 }
 
 .row-skills {
@@ -707,4 +707,53 @@ h4 {
   .item-contact:nth-child(1) {
     margin-bottom: -10px;
   }
+}
+
+
+
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+ }
+  100% {
+      transform: translateX(calc(-250px * 7));
+ }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: inherit;
+  padding: 50px 0;
+ 
+}
+.slider::before, .slider::after {
+  
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+  background-color: inherit;
+
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
 }
