@@ -716,12 +716,11 @@ h4 {
 .item-contact:nth-child(1) {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.item-contact:nth-child(1) a {
-  margin: 5px;
-  width: 250px;
-}
+
 
 .contact-wathsapp {
   background: #11998e; /* fallback for old browsers */
@@ -764,17 +763,8 @@ h4 {
 }
 
 .email {
-  background: #ffafbd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffc3a0,
-    #ffafbd
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffc3a0,
-    #ffafbd
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: transparent;
+  border: 2px solid #fff;
 }
 
 .submit {
@@ -785,28 +775,26 @@ h4 {
   background-color: transparent;
 }
 
-.item-contact img {
+.perfil-contact {
   height: auto;
   width: 100px;
 }
 
 .item-contact h4 {
   font-size: 30px;
-  color: #423b52;
+  color: #fff;
+  
 }
 
 .item-contact p {
   font-weight: 400;
-  color: #fff;
+  color: #423b52;
+  font-weight: 500;
 }
 
-.item-contact a:nth-child(1) {
-  margin-left: 40px;
-}
 
-.item-contact a:nth-child(3) {
-  margin-left: 40px;
-}
+
+
 
 .email-contact {
   text-align: center;
@@ -972,18 +960,18 @@ details[open] summary:before {
   content: "↑";
 }
 
-.acorddion a {
+.accordion a {
   color: inherit;
   font-weight: 600;
   text-decoration: none;
   box-shadow: 0 1px 0 0;
 }
 
-.acorddion a:hover {
+.accordion a:hover {
   box-shadow: 0 3px 0 0;
 }
 
-.acorddion {
+.accordion {
   width: 90%;
   max-width: 600px;
   margin-left: auto;
