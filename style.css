@@ -682,6 +682,9 @@ h4 {
     padding: 15px;
     text-align: center;
   }
+  .item-projects h2 {
+    font-size: 20px;
+  }
 }
 
 /* Contact */
@@ -719,8 +722,6 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .contact-wathsapp {
   background: #11998e; /* fallback for old browsers */
@@ -783,7 +784,6 @@ h4 {
 .item-contact h4 {
   font-size: 30px;
   color: #fff;
-  
 }
 
 .item-contact p {
@@ -791,10 +791,6 @@ h4 {
   color: #423b52;
   font-weight: 500;
 }
-
-
-
-
 
 .email-contact {
   text-align: center;
