@@ -13,6 +13,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #13161d;
 }
 
 .header {
@@ -20,7 +21,7 @@ body {
   z-index: 3;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: #13161d;
   align-items: center;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -31,23 +32,20 @@ body {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
-  color: #423b52 !important;
   font-weight: 500;
-  background-color: #fff;
+  color: #fff;
   font-size: 16px;
 }
 
 .header .contact {
-  background-color: #ebecf5;
   border-radius: 40px;
-  color: #010204;
+  color: #fff;
   text-align: center;
 }
 
@@ -187,8 +185,8 @@ body {
 }
 
 .title {
-  font-size: 50px;
-  color: #423b52;
+  font-size: 70px;
+  color: #fff;
   letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
@@ -196,7 +194,7 @@ body {
 }
 
 .title_gradient {
-  font-size: 50px;
+  font-size: 70px;
   background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
   -webkit-background-clip: text;
   background-clip: text;
@@ -215,30 +213,35 @@ body {
   padding: 20px;
 }
 .btns a {
-  font-size: 17px;
-
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 .cv {
   padding: 20px 60px;
-  border-radius: 30px;
+  border-radius: 12px;
   color: #fff;
   font-weight: 400;
-  background: linear-gradient(135deg, #2064da, #f3aeff);
+  background-color: #1860de;
   margin: 5px;
 }
 .btn-projects {
   padding: 15px 60px;
   border-radius: 30px;
   color: #fff;
-  border: 3px solid #8497ff;
+  text-decoration: line-through;
   font-weight: 700;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
+}
+
+
+
+.btn-examples {
+  padding: 20px 60px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 400;
+  background-color: #1860de;
+  margin: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -279,11 +282,11 @@ body {
 
 .item-about p {
   margin: 2px;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 500;
-  width: 510px;
+  width: 720px;
   margin: 30px 0px;
-  color: #423b52;
+  color: #fff;
 }
 
 .item-about:nth-child(2) {
@@ -383,10 +386,6 @@ body {
 }
 
 /* SKILLS */
-
-.svg-home {
-  background: linear-gradient(135deg, #2064da, #f3aeff);
-}
 
 .skills {
   background-color: inherit;
@@ -612,7 +611,7 @@ h4 {
 }
 
 .title-projects h1 {
-  color: #423b52;
+  color: #fff;
   font-size: 50px;
 }
 .title-projects span {
@@ -647,11 +646,11 @@ h4 {
 .item-projects h2 {
   width: 350px;
   text-align: center;
-  color: #423b52;
+  color: #fff;
 }
 
 .item-projects h4 {
-  color: #423b52;
+  color: #bcbcbc;
   margin: 10px;
   font-weight: 500;
 }
@@ -692,7 +691,7 @@ h4 {
 #contact {
   text-align: center;
   padding-bottom: 30px;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
+
   padding-top: 10px;
 }
 
@@ -774,6 +773,8 @@ h4 {
   font-weight: 700;
   color: #fff;
   background-color: transparent;
+  border-radius: 30px;
+  margin-top: 40px;
 }
 
 .perfil-contact {
@@ -788,7 +789,7 @@ h4 {
 
 .item-contact p {
   font-weight: 400;
-  color: #423b52;
+  color: #1860de;
   font-weight: 500;
 }
 
@@ -806,6 +807,7 @@ h4 {
 .made {
   margin-top: 30px;
   font-weight: 500;
+  color: #fff
 }
 
 .made a {
@@ -821,13 +823,22 @@ form {
 form input {
   margin: 10px;
   width: 300px;
-  border-radius: 8px;
+
   border: 0px;
   padding: 10px;
+  background-color: transparent;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
 }
 form textarea {
   padding: 30px;
-  border-radius: 8px;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #fff;
 }
 
 @media screen and (max-width: 600px) {
@@ -869,6 +880,8 @@ form textarea {
   position: relative;
   background-color: inherit;
   padding: 20px 0;
+  transform: rotate(-4.3deg);
+  background-color: #1860de;
 }
 .slider::before,
 .slider::after {
@@ -917,10 +930,6 @@ details + details {
 
 summary {
   list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
 }
 
 summary {
