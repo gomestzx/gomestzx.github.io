@@ -381,7 +381,7 @@ body {
     font-weight: 500;
     width: 310px;
     margin: 5px 0px;
-    color: #423b52;
+    
   }
 }
 
@@ -665,7 +665,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
   .title-projects h1 {
-    color: #423b52;
+    
     font-size: 25px;
   }
   .item-projects img {
