@@ -233,8 +233,6 @@ body {
   font-weight: 700;
 }
 
-
-
 .btn-examples {
   padding: 20px 60px;
   border-radius: 12px;
@@ -381,7 +379,6 @@ body {
     font-weight: 500;
     width: 310px;
     margin: 5px 0px;
-    
   }
 }
 
@@ -436,171 +433,6 @@ body {
 .item-skills p {
   font-weight: 400;
 }
-
-/* PROJECTS 
-
-.project {
-  margin-top: 50px;
-}
-
-.title-project {
-  text-align: center;
-}
-
-.title-project h1 {
-  font-size: 70px;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  letter-spacing: -2.1px;
-  white-space: nowrap;
-  margin-bottom: -1px;
-  padding: 15px;
-}
-.title-project h4 {
-  padding: 15px;
-  font-weight: 500;
-  margin-top: 10px;
-}
-.title-project spam {
-  padding: 10px;
-  color: #fff;
-  font-weight: 600;
-  background: linear-gradient(135deg, #2064da, #f3aeff);
-  border-radius: 20px;
-  display: inline-flex;
-}
-
-.title-project spam svg {
-  margin-left: 10px;
-}
-
-.row-project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-  flex-wrap: wrap;
-  background-repeat: repeat-x;
-  width: 100%;
-}
-
-.row-project-reverse {
-  flex-wrap: wrap-reverse;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-
-  background-repeat: repeat-x;
-  width: 100%;
-}
-
-.row-project img {
-  max-width: 100%;
-  height: auto;
-  width: 500px;
-}
-
-.row-project-reverse img {
-  max-width: 100%;
-  height: auto;
-  width: 500px;
-}
-
-.row-project p {
-  margin: 0;
-  width: 300px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.row-project-reverse p {
-  margin: 0;
-  width: 300px;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.item-project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  text-align: center;
-}
-
-.item-project h2 {
-  font-size: 40px;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  letter-spacing: -2.1px;
-  white-space: nowrap;
-  margin-bottom: -1px;
-}
-
-.item-project h3 {
-  font-size: 30px;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
-  letter-spacing: -2.1px;
-  white-space: nowrap;
-  margin: 10px;
-}
-
-.item-project .demo {
-  margin-top: 15px;
-  padding: 20px 60px;
-  border-radius: 30px;
-  color: #fff;
-  font-weight: 500;
-  background: linear-gradient(135deg, #2064da, #f3aeff);
-  font-family: "Montserrat", sans-serif;
-}
-
-.encurts {
-  transform: rotateZ(5deg);
-  z-index: -100;
-}
-
-.covid {
-  transform: translateZ(50%);
-  transform: rotateZ(-5deg);
-  z-index: -100;
-}
-
-h4 {
-  text-align: center;
-  margin: 0;
-}
-
-@media screen and (max-width: 600px) {
-  .item-project h1 {
-    font-size: 40px !important;
-  }
-  .item-project {
-    margin: 0;
-  }
-  .row-project img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-  }
-  .row-project-reverse img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;
-  }
-} */
 
 .projects {
   margin: 50px;
@@ -665,7 +497,6 @@ h4 {
 
 @media screen and (max-width: 600px) {
   .title-projects h1 {
-    
     font-size: 25px;
   }
   .item-projects img {
@@ -715,6 +546,7 @@ h4 {
 .item-contact {
   margin: 10px;
 }
+
 .item-contact:nth-child(1) {
   display: flex;
   flex-direction: column;
@@ -722,45 +554,7 @@ h4 {
   align-items: center;
 }
 
-.contact-wathsapp {
-  background: #11998e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #38ef7d,
-    #11998e
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #38ef7d,
-    #11998e
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.contact-linkdein {
-  background: #1e3c72; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2a5298,
-    #1e3c72
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2a5298,
-    #1e3c72
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.contact-instagram {
-  background: #ff9966; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff5e62,
-    #ff9966
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff5e62,
-    #ff9966
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 
 .email {
   background-color: transparent;
@@ -807,7 +601,7 @@ h4 {
 .made {
   margin-top: 30px;
   font-weight: 500;
-  color: #fff
+  color: #fff;
 }
 
 .made a {
@@ -911,77 +705,11 @@ form textarea {
   width: 250px;
 }
 
-/* Acorddion */
-
-details div {
-  padding: 1.5em;
-  border-radius: 20px;
-  color: #423b52;
-  font-weight: 700;
+@media only screen and (max-width: 767px) {
+  .slider {
+    
+    transform: none;
+  }
 }
 
-details div > * + * {
-  margin-top: 1.5em;
-}
 
-details + details {
-  margin-top: 0.5rem;
-}
-
-summary {
-  list-style: none;
-}
-
-summary {
-  border: 2px solid #fff;
-  padding: 0.75em 1em;
-  cursor: pointer;
-  position: relative;
-  padding-left: calc(1.75rem + 0.75rem + 0.75rem);
-  border-radius: 20px;
-  color: #fff;
-  font-weight: 700;
-}
-
-summary:before {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0.75rem;
-  content: "↓";
-  width: 1.75rem;
-  height: 1.75rem;
-  background-color: #fff;
-  color: #000;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  font-weight: 700;
-  border-radius: 20px;
-}
-
-details[open] summary:before {
-  content: "↑";
-}
-
-.accordion a {
-  color: inherit;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 1px 0 0;
-}
-
-.accordion a:hover {
-  box-shadow: 0 3px 0 0;
-}
-
-.accordion {
-  width: 90%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5rem;
-  margin-top: 20px;
-  padding-bottom: 50px;
-}
