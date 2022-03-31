@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Horizontal Mobile-->
-
-    <title>Portfólio - Felipe Matheus</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Felipe Matheus - Portfólio</title>
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- Navbar -->
 
     <header
       class="header"
@@ -28,22 +25,20 @@
         <li>
           <a href="#">Home</a>
         </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
+        
         <li>
           <a href="#projects">Projetos</a>
         </li>
 
         <li>
           <a class="contact" href="#contact"
-            >Entrar em <span class="contact-span">Contato! </span> 💬</a
+            >Entrar em <span class="contact-span">Contato! </span> </a
           >
         </li>
       </ul>
     </header>
 
-    <!-- ABOUT -->
+    <!-- Hero -->
 
     <div class="about">
       <div class="row-about">
@@ -55,14 +50,14 @@
           data-aos-duration="2000"
         >
           <h1 class="title">Prazer, eu sou o</h1>
-          <h1 class="title_gradient">
+          <h1 class="title-gradient">
             Felipe Matheus <img src="./assets/hands.svg" alt="" />
           </h1>
 
           <p class="p_about">
-            Sou desenvolvedor web e trabalho atualmente com NextJS, Typescript e SASS.
-            Fiz esse portfólio para mostrar um pouco da minha experiência e dos
-            meus projetos.
+            Sou desenvolvedor web e trabalho atualmente com NextJS, Typescript e
+            SASS. Fiz esse portfólio para mostrar um pouco da minha experiência
+            e dos meus projetos.
           </p>
 
           <div class="btns">
@@ -75,8 +70,9 @@
               Currículo
             </a>
 
-            <a href="#projects" class="btn-projects"> <span class="btn-span">Projetos</span>
-               </a>
+            <a href="#projects" class="btn-projects">
+              <span class="btn-span">Projetos</span>
+            </a>
           </div>
         </div>
         <div
@@ -108,17 +104,10 @@
       /></a>
     </div>
 
-    <div class="skills" id="skills"></div>
-    <br />
-    <div class="svg-home">
-      <span style="line-height: 0; display: block"> </span>
-
-     
-
-      <div
-        class="slider"
-        
-      >
+    <!-- Slide Auto Play -->
+    <br /><br />
+    <div class="slide" id="skills">
+      <div class="slider">
         <div class="slide-track">
           <div class="slide">
             <img src="./assets/html.png" height="100" width="250" alt="" />
@@ -160,58 +149,40 @@
             <img src="./assets/firebase.png" height="100" width="250" alt="" />
           </div>
         </div>
-
-       
+      </div>
     </div>
-
-   
+    <!-- Projects -->
 
     <div class="projects" id="projects">
-      <div
-        class="title-projects"
-        data-aos="zoom-in-up"
-        data-aos-delay="50"
-        data-aos-duration="2000"
-      >
-        <h1>
-          Confira uma lista com meus <br />
-          <span>projetos pessoais </span>👀
-        </h1>
-      </div>
-      <div class="row-projects">
-        <div
-          class="item-projects"
-          data-aos="fade-in"
-          data-aos-delay="50"
-          data-aos-duration="2500"
-        >
-          <img src="./assets/4geek.png" alt="" />
-          <h4>Projetos Web</h4>
-          <h2>
-            Projetos desenvolvidos com
-            <span> HTML, CSS, JS, ReactJS e NextJS</span>
-          </h2>
-          <br />
-          <a class="btn-examples" href="http://github.com/gomestzx">Demo</a>
-        </div>
-        <div
-          class="item-projects"
-          data-aos="fade-in"
-          data-aos-delay="50"
-          data-aos-duration="2500"
-        >
-          <img src="./assets/mobile.png" alt="" />
-          <h4>Projetos Mobile</h4>
-          <h2>
-            Projetos desenvolvidos com
-            <span> React Native, Expo e Firebase</span>
-          </h2>
-          <br />
-          <a class="btn-examples" href="http://github.com/gomestzx">Demo</a>
-        </div>
-      </div>
+
+      <h2 class="title-contact" data-aos="fade-in"
+      data-aos-delay="50"
+      data-aos-duration="2000">Projetos</h2>
+
+      <section class="hero-section" data-aos="zoom-in-up"
+      data-aos-delay="50"
+      data-aos-duration="2000">
+        <div class="card-grid">
+          <a class="card" href="https://github.com/gomestzx/CovidApp">
+            <div class="card__background" style="background-image: url(/assets/covidapp.png)"></div>
+            
+          </a>
+          <a class="card" href="https://capfinanceira.com.br">
+            <div class="card__background" style="background-image: url(/assets/cap.png)"></div>
+          </a>
+          <a class="card" href="https://github.com/gomestzx/Encurts">
+            <div class="card__background" style="background-image: url(/assets/encurts.png)"></div>
+            
+          </li>
+          <a class="card" href="https://jornaltokens.com">
+            <div class="card__background" style="background-image: url(/assets/tokens.png)"></div>
+          </a>
+        <div>
+      </section>
+      
+
     </div>
-    <!--  Contact -->
+    <!-- Contact -->
 
     <div
       class="contact"
