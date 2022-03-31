@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Felipe Matheus - Portfólio</title>
   </head>
   <body>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
     <!-- Navbar -->
 
     <header
@@ -49,8 +54,8 @@
           data-aos-delay="50"
           data-aos-duration="2000"
         >
-          <h1 class="title">Prazer, eu sou o</h1>
-          <h1 class="title-gradient">
+          <h1 class="title cursor-scale">Prazer, eu sou o</h1>
+          <h1 class="title-gradient cursor-scale">
             Felipe Matheus <img src="./assets/hands.svg" alt="" />
           </h1>
 
@@ -71,7 +76,7 @@
             </a>
 
             <a href="#projects" class="btn-projects">
-              <span class="btn-span">Projetos</span>
+              <span class="btn-span ">Projetos</span>
             </a>
           </div>
         </div>
@@ -155,7 +160,7 @@
 
     <div class="projects" id="projects">
 
-      <h2 class="title-contact" data-aos="fade-in"
+      <h2 class="title-contact cursor-scale" data-aos="fade-in"
       data-aos-delay="50"
       data-aos-duration="2000">Projetos</h2>
 
@@ -191,7 +196,7 @@
       data-aos-delay="50"
       data-aos-duration="2000"
     >
-      <h2 class="title-contact">Contato</h2>
+      <h2 class="title-contact cursor-scale">Contato</h2>
 
       <div
         class="row-contact"
@@ -261,6 +266,8 @@
       </p>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js" integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
