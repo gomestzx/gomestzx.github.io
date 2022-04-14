@@ -237,6 +237,7 @@ body {
   white-space: nowrap;
   margin-bottom: -1px;
   font-family: 'Montserrat', sans-serif;
+  width: 300px;
 }
 
 .title-gradient {
