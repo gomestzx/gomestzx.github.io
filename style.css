@@ -17,6 +17,47 @@ body {
 
 /* Cursor */
 
+@media only screen and (max-width: 767px) {
+  .cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #5c7aea;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+  .cursor2 {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  .grow,
+  .grow-small {
+    transform: scale(4);
+    background: #ffffff;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  
+  .grow-small {
+    transform: scale(2);
+  }
+}
+
 .cursor {
   position: fixed;
   width: 40px;
@@ -493,7 +534,6 @@ body {
   background-size: cover;
   background-position: center;
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
   left: 0;
   position: absolute;
   right: 0;
@@ -514,8 +554,6 @@ body {
   color: #fff;
   font-size: 20px;
 }
-
-
 
 /* Contact */
 
