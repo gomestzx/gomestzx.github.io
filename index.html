@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    
+
     <title>Felipe Matheus - Portfólio</title>
   </head>
   <body>
-
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
@@ -30,15 +29,15 @@
         <li>
           <a href="#">Home</a>
         </li>
-        
+
         <li>
           <a href="#projects">Projetos</a>
         </li>
 
         <li>
           <a class="contact" href="#contact"
-            >Entrar em <span class="contact-span">Contato! </span> </a
-          >
+            >Entrar em <span class="contact-span">Contato! </span>
+          </a>
         </li>
       </ul>
     </header>
@@ -76,7 +75,7 @@
             </a>
 
             <a href="#projects" class="btn-projects">
-              <span class="btn-span ">Projetos</span>
+              <span class="btn-span">Projetos</span>
             </a>
           </div>
         </div>
@@ -159,37 +158,59 @@
     <!-- Projects -->
 
     <div class="projects" id="projects">
+      <h2
+        class="title-contact cursor-scale"
+        data-aos="fade-in"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
+        Projetos
+      </h2>
 
-      <h2 class="title-contact cursor-scale" data-aos="fade-in"
-      data-aos-delay="50"
-      data-aos-duration="2000">Projetos</h2>
-
-      <section class="hero-section" data-aos="zoom-in-up"
+      <div class="container-project" data-aos="zoom-in-up"
       data-aos-delay="50"
       data-aos-duration="2000">
-        <div class="card-grid">
-          <a class="card" href="https://github.com/gomestzx/CovidApp">
-            <div class="card__background" style="background-image: url(/assets/covidapp.png)"></div>
-            
-          </a>
-          <a class="card" href="https://capfinanceira.com.br">
-            <div class="card__background" style="background-image: url(/assets/cap.png)"></div>
-          </a>
-          <a class="card" href="https://github.com/gomestzx/Encurts">
-            <div class="card__background" style="background-image: url(/assets/encurts.png)"></div>
-            
-          </a>
-          <a class="card" href="https://jornaltokens.com">
-            <div class="card__background" style="background-image: url(/assets/tokens.png)"></div>
-          </a>
-          <a href="https://github.com/gomestzx" class="github" href="https://jornaltokens.com">
-            <h5 >Ver mais projetos +</h5>
-          </a>
-        <div>
-      </section>
-      
-
+        <div class="row-project">
+          <div class="text-row">
+            <h5>Cap Financeira</h5>
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <a href="https://capfinanceira.com.br" target="_blank"
+                >VER MAIS</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row-project">
+          <div class="text-row">
+            <h5>GlassmorphismCSS</h5>
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <a href="https://glassmorphism-generator-nextjs.vercel.app/" target="_blank"
+                >VER MAIS</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row-project">
+          <div class="text-row">
+            <h5>CovidApp</h5>
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <a href="https://github.com/gomestzx/CovidApp" target="_blank"
+                >VER MAIS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- New Project-->
+
     <!-- Contact -->
 
     <div
@@ -269,7 +290,12 @@
       </p>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js" integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"
+    integrity="sha512-1d5v+PiEBtx3YjXb8mrY+b7aPCIF1nVQcExMopDaO2ATKY3ivHre8aqSdzC6c+1RLSNdqLK+a45oz0qqxtyEWA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
