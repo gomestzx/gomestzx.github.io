@@ -458,7 +458,7 @@ body {
 }
 
 .row-project:nth-child(1) {
-  background-image: url("./assets/cap.png");
+  background-image: url("./assets/nft.png");
   background-position: 47%;
   background-size: cover;
 }
@@ -468,7 +468,7 @@ body {
   background-size: cover;
 }
 .row-project:nth-child(3) {
-  background-image: url("./assets/nft.png");
+  background-image: url("./assets/wathsappLink.png");
   background-position: 47%;
   background-size: cover;
 }
