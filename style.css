@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 * {
   text-decoration: none;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
 }
 
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #13161d;
 }
 
 /* Navbar */
@@ -21,7 +21,7 @@ body {
   z-index: 3;
   display: flex;
   justify-content: center;
-  background-color: #13161d;
+
   align-items: center;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -32,19 +32,27 @@ body {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  --moz-backdrop-filter: blur(0px);
+  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
+    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  padding: 0px 30px;
+  border-radius: 12px;
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 400;
+  color: #13161d;
   font-size: 16px;
 }
 
 .header .contact {
-  color: #fff;
+  color: #13161d;
   text-align: center;
 }
 
@@ -197,15 +205,39 @@ body {
 
 .title-gradient {
   font-size: 70px;
-  background: linear-gradient(90deg, #1860de, #8497ff, #e2abff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
+  font-weight: 900;
   letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  background: linear-gradient(-80deg, #00d0ff, #00d0ff, #5c7aea, #5c7aea);
+  background: -webkit-linear-gradient(
+    -80deg,
+    #00d0ff,
+    #00d0ff,
+    #5c7aea,
+    #5c7aea
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 10s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 
 .btns {
@@ -215,24 +247,29 @@ body {
   padding: 20px;
 }
 .btns a {
-  font-weight: 700;
+  font-weight: 400;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
 .cv {
   padding: 20px 60px;
   border-radius: 12px;
-  color: #fff;
-  font-weight: 400;
+  color: #13161d;
   background-color: #1860de;
   margin: 5px;
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  --moz-backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
+    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 .btn-projects {
   padding: 15px 60px;
   border-radius: 30px;
-  color: #fff;
-  text-decoration: line-through;
-  font-weight: 700;
+  color: #13161d;
+  font-weight: 400;
 }
 
 .row-about {
@@ -249,11 +286,11 @@ body {
 
 .item-about p {
   margin: 2px;
-  font-size: 22px;
-  font-weight: 500;
-  width: 720px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 520px;
   margin: 30px 0px;
-  color: #fff;
+  color: #13161d;
 }
 
 .item-about h3 {
@@ -323,7 +360,7 @@ body {
   .item-about p {
     margin: 2px;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
     width: auto;
     margin: 5px 0px;
     text-align: center;
@@ -348,7 +385,6 @@ body {
   }
   .btn-projects {
     padding: 10px 20px;
-    border: 2px solid #8497ff;
   }
 }
 
@@ -472,10 +508,9 @@ body {
 }
 
 .row-project h5 {
-  color: #fff;
+  color: #13161d;
   font-weight: 400;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .text-row {
@@ -485,10 +520,17 @@ body {
   border-end-start-radius: 6px;
   position: absolute;
   bottom: 0 !important;
-  background-color: #1860de;
+  color: #13161d;
   left: 0;
   display: flex;
   justify-content: center;
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  --moz-backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
+    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 /* Contact */
@@ -501,12 +543,40 @@ body {
 
 .title-contact {
   font-size: 70px;
-  color: #fff;
+  font-weight: 900;
   letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
   margin-top: 50px;
   text-align: center;
+  background: linear-gradient(-80deg, #00d0ff, #00d0ff, #5c7aea, #5c7aea);
+  background: -webkit-linear-gradient(
+    -80deg,
+    #00d0ff,
+    #00d0ff,
+    #5c7aea,
+    #5c7aea
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300% !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 10s ease-in-out infinite;
+  -moz-animation: animated_text 10s ease-in-out infinite;
+  -webkit-animation: animated_text 10s ease-in-out infinite;
+}
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
 
 .row-contact {
@@ -527,19 +597,19 @@ body {
   align-items: center;
 }
 
-.email {
-  background-color: transparent;
-  border: 2px solid #fff;
-}
-
 .submit {
-  color: #fff;
-  border: 3px solid #fff;
-  font-weight: 700;
-  color: #fff;
+  color: #13161d;
+  font-weight: 400;
   background-color: transparent;
   border-radius: 30px;
   margin-top: 40px;
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  --moz-backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
+    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .perfil-contact {
@@ -549,34 +619,41 @@ body {
 
 .item-contact h4 {
   font-size: 30px;
-  color: #fff;
+  color: #13161d;
 }
 
 .item-contact p {
   font-weight: 400;
   color: #1860de;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .email-contact {
   text-align: center;
   padding: 20px 60px;
   border-radius: 30px;
-  color: #fff;
-  font-weight: 600;
+  color: #13161d;
+  font-weight: 400;
 
   margin: 25px;
   font-family: 'Montserrat', sans-serif;
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  --moz-backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
+    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 .made {
   margin-top: 30px;
-  font-weight: 500;
-  color: #fff;
+  font-weight: 400;
+  color: #13161d;
 }
 
 .made a {
-  color: #fff;
+  color: #1860de;
 }
 
 form {
@@ -592,18 +669,17 @@ form input {
   border: 0px;
   padding: 10px;
   background-color: transparent;
-  border-bottom: 2px solid #fff;
   outline: none;
   color: #fff;
 }
 form textarea {
   padding: 30px;
-
-  background-color: transparent;
+  background-color: #d2e8f5;
   border: 0;
   border-bottom: 2px solid #fff;
   outline: none;
   color: #fff;
+  border-radius: 12px;
 }
 
 @media screen and (max-width: 600px) {
