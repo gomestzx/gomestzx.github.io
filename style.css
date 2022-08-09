@@ -342,6 +342,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .row-about {
+    margin-top: 0px;
+  }
   .item-about:nth-child(1) {
     margin-top: -70px;
   }
@@ -363,7 +366,7 @@ body {
   }
   .item-about p {
     margin: 2px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     width: auto;
     margin: 5px 0px;
