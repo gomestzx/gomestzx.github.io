@@ -58,8 +58,7 @@ body {
 
 .contact-span {
   color: #5c7aea;
-  font-weight: bold;
-  border-bottom: 2px solid #5c7aea;
+  font-weight: 600;
 }
 
 .header .logo {
@@ -291,6 +290,11 @@ body {
   width: 520px;
   margin: 30px 0px;
   color: #13161d;
+}
+
+.item-about p a {
+  color: #1860de;
+  font-weight: 500;
 }
 
 .item-about h3 {
@@ -610,6 +614,7 @@ body {
   box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
     inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
     inset 0px 11px 28px 0px rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .perfil-contact {
@@ -634,9 +639,7 @@ body {
   border-radius: 30px;
   color: #13161d;
   font-weight: 400;
-
   margin: 25px;
-  font-family: 'Montserrat', sans-serif;
   backdrop-filter: blur(0px);
   --webkit-backdrop-filter: blur(0px);
   --moz-backdrop-filter: blur(0px);
@@ -665,12 +668,11 @@ form {
 form input {
   margin: 10px;
   width: 300px;
-
   border: 0px;
   padding: 10px;
   background-color: transparent;
   outline: none;
-  color: #fff;
+  color: #13161d;
 }
 form textarea {
   padding: 30px;
@@ -678,7 +680,7 @@ form textarea {
   border: 0;
   border-bottom: 2px solid #fff;
   outline: none;
-  color: #fff;
+  color: #13161d;
   border-radius: 12px;
 }
 
