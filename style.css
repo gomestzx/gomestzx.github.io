@@ -474,12 +474,12 @@ body {
   background-size: cover;
 }
 .row-project:nth-child(2) {
-  background-image: url('./assets/nft.png');
+  background-image: url('./assets/wathsappLink.png');
   background-position: 47%;
   background-size: cover;
 }
 .row-project:nth-child(3) {
-  background-image: url('./assets/wathsappLink.png');
+  background-image: url('./assets/nft.png');
   background-position: 47%;
   background-size: cover;
 }
