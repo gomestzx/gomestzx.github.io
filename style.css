@@ -647,4 +647,7 @@ form textarea {
   .item-contact:nth-child(1) {
     margin-bottom: -10px;
   }
+  .submit {
+    height: 40px;
+  }
 }
