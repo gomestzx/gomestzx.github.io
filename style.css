@@ -12,6 +12,7 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: #f3ede8;
 }
 
 /* Navbar */
@@ -20,8 +21,7 @@ body {
   width: 100%;
   z-index: 3;
   display: flex;
-  justify-content: center;
-
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -32,12 +32,6 @@ body {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  backdrop-filter: blur(0px);
-  --webkit-backdrop-filter: blur(0px);
-  --moz-backdrop-filter: blur(0px);
-  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
-    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
-    inset 0px 11px 28px 0px rgb(255, 255, 255);
   padding: 0px 30px;
   border-radius: 12px;
 }
@@ -48,7 +42,7 @@ body {
   text-decoration: none;
   font-weight: 400;
   color: #13161d;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .header .contact {
@@ -57,16 +51,17 @@ body {
 }
 
 .contact-span {
-  color: #5c7aea;
   font-weight: 600;
+  color: #5c7aea;
 }
 
 .header .logo {
   display: block;
   float: left;
-  font-size: 2em;
+  font-size: 20px;
   padding: 10px 20px;
   text-decoration: none;
+  color: #ea5656;
 }
 
 .logo img {
@@ -89,7 +84,7 @@ body {
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 15px 20px;
   position: relative;
   margin-top: 10px;
   user-select: none;
@@ -195,80 +190,42 @@ body {
 
 .title {
   font-size: 70px;
-  color: #fff;
-  letter-spacing: -2.1px;
-  white-space: nowrap;
-  margin-bottom: -1px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.title-gradient {
-  font-size: 70px;
   font-weight: 900;
   letter-spacing: -2.1px;
   white-space: nowrap;
   margin-bottom: -1px;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  background: linear-gradient(-80deg, #00d0ff, #00d0ff, #5c7aea, #5c7aea);
-  background: -webkit-linear-gradient(
-    -80deg,
-    #00d0ff,
-    #00d0ff,
-    #5c7aea,
-    #5c7aea
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 300% !important;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animated_text 10s ease-in-out infinite;
-  -moz-animation: animated_text 10s ease-in-out infinite;
-  -webkit-animation: animated_text 10s ease-in-out infinite;
-}
-@keyframes animated_text {
-  0% {
-    background-position: 0px 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0px 50%;
-  }
+  color: #ea5656;
 }
 
 .btns {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px;
+  flex-direction: column;
 }
 .btns a {
-  font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-}
-.cv {
-  padding: 20px 60px;
-  border-radius: 12px;
-  color: #13161d;
-  background-color: #1860de;
-  margin: 5px;
-  backdrop-filter: blur(0px);
-  --webkit-backdrop-filter: blur(0px);
-  --moz-backdrop-filter: blur(0px);
-  background-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
-    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
-    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 .btn-projects {
-  padding: 15px 60px;
-  border-radius: 30px;
-  color: #13161d;
+  padding: 8px 30px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #ea5656;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cv {
+  padding: 4px;
+  border-radius: 8px;
+  color: #737885;
   font-weight: 400;
+  font-size: 18px;
+}
+
+.cv a {
+  color: #1363df;
+  font-weight: 600;
 }
 
 .row-about {
@@ -370,7 +327,6 @@ body {
     font-weight: 400;
     width: auto;
     margin: 5px 0px;
-    text-align: center;
   }
   .title {
     display: none;
@@ -386,9 +342,12 @@ body {
   .btns {
     justify-content: center;
     padding: 20px;
+    align-items: center;
   }
   .cv {
-    padding: 10px 20px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 400;
   }
   .btn-projects {
     padding: 10px 20px;
@@ -412,8 +371,19 @@ body {
   position: relative;
   background-color: inherit;
   padding: 20px 0;
-  transform: rotate(-4.3deg);
-  background-color: #1860de;
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .slider::before,
 .slider::after {
@@ -485,7 +455,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(3, 0, 0, 0.35);
+  background-color: #ea5656;
 }
 
 .overlay-text a {
@@ -515,8 +485,8 @@ body {
 }
 
 .row-project h5 {
-  color: #13161d;
-  font-weight: 400;
+  color: #fff;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -527,17 +497,11 @@ body {
   border-end-start-radius: 6px;
   position: absolute;
   bottom: 0 !important;
-  color: #13161d;
+  color: #fff;
   left: 0;
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(0px);
-  --webkit-backdrop-filter: blur(0px);
-  --moz-backdrop-filter: blur(0px);
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
-    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
-    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  background-color: #ea5656;
 }
 
 /* Contact */
@@ -556,23 +520,7 @@ body {
   margin-bottom: -1px;
   margin-top: 50px;
   text-align: center;
-  background: linear-gradient(-80deg, #00d0ff, #00d0ff, #5c7aea, #5c7aea);
-  background: -webkit-linear-gradient(
-    -80deg,
-    #00d0ff,
-    #00d0ff,
-    #5c7aea,
-    #5c7aea
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  background-size: 300% !important;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animated_text 10s ease-in-out infinite;
-  -moz-animation: animated_text 10s ease-in-out infinite;
-  -webkit-animation: animated_text 10s ease-in-out infinite;
+  color: #ea5656;
 }
 @keyframes animated_text {
   0% {
@@ -605,19 +553,13 @@ body {
 }
 
 .submit {
-  color: #13161d;
+  color: #fff;
   font-weight: 400;
   background-color: transparent;
-  border-radius: 30px;
-  margin-top: 40px;
-  backdrop-filter: blur(0px);
-  --webkit-backdrop-filter: blur(0px);
-  --moz-backdrop-filter: blur(0px);
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
-    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
-    inset 0px 11px 28px 0px rgb(255, 255, 255);
-    cursor: pointer;
+  border-radius: 8px;
+  margin-top: 22px;
+  background-color: #ea5656;
+  cursor: pointer;
 }
 
 .perfil-contact {
@@ -638,18 +580,12 @@ body {
 
 .email-contact {
   text-align: center;
-  padding: 20px 60px;
+  padding: 15px 40px;
   border-radius: 30px;
   color: #13161d;
   font-weight: 400;
   margin: 25px;
-  backdrop-filter: blur(0px);
-  --webkit-backdrop-filter: blur(0px);
-  --moz-backdrop-filter: blur(0px);
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 35px 35px 68px 0px rgba(142, 209, 252, 0.5),
-    inset -12px -12px 16px 0px rgba(142, 209, 252, 0.6),
-    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  border: 2px solid #ea5656;
 }
 
 .made {
@@ -666,6 +602,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 form input {
@@ -673,18 +610,21 @@ form input {
   width: 300px;
   border: 0px;
   padding: 10px;
-  background-color: transparent;
+  background-color: #fff;
   outline: none;
   color: #13161d;
+  border-radius: 8px;
 }
 form textarea {
   padding: 30px;
-  background-color: #d2e8f5;
+  background-color: #fff;
   border: 0;
   border-bottom: 2px solid #fff;
   outline: none;
   color: #13161d;
-  border-radius: 12px;
+  border-radius: 8px;
+  width: 265px;
+  margin-top: 11px;
 }
 
 @media screen and (max-width: 600px) {
