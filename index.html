@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
 
@@ -22,12 +22,23 @@
       data-aos-delay="50"
       data-aos-duration="2500"
     >
-    <a href="http://linkedin.com/in/gomestzx" target="_blank" class="logo">@gomestzx</a>
+      <a href="http://linkedin.com/in/gomestzx" target="_blank" class="logo"
+        >@gomestzx</a
+      >
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
         ><span class="navicon"></span
       ></label>
       <ul class="menu">
+        <li>
+          <a href="#"><span>Skills</span> </a>
+        </li>
+        <li>
+          <a href="#"><span>Projects and Works</span> </a>
+        </li>
+        <li>
+          <a href="#"><span>Experience</span> </a>
+        </li>
         <li>
           <a class="contact" href="#contact"
             ><span class="contact-span">Contact-me! 📨</span>
@@ -50,7 +61,7 @@
           <h1 class="title cursor-scale">Hi! I'm Felipe</h1>
 
           <p class="p-about">
-            ❤️ I love the intersection of code and design &ensp;<br /> 
+            ❤️ I love the intersection of code and design &ensp;<br />
             💬 I like to talk about web3 and cyber security <br />
             🦄 I created a webApp for devs 👉
             <a target="_blank" href="https://tools4css.vercel.app">Tools4CSS</a>
@@ -63,12 +74,14 @@
               download
               class="btn-projects"
             >
-            check my projects
+              check my projects
             </a>
 
             <span href="#projects" class="cv">
-              <span class="btn-span">or download my resume <a href="./assets/curriculo.pdf">here</a> </span>
-            </sapn>
+              <span class="btn-span"
+                >or download my resume <a href="./assets/curriculo.pdf">here</a>
+              </span>
+            </span>
           </div>
         </div>
         <div
@@ -103,6 +116,7 @@
     <!-- Projects -->
 
     <div class="projects" id="projects">
+      <h2 class="title-section cursor-scale">Projects</h2>
 
       <div
         id="project"
@@ -117,9 +131,27 @@
           </div>
           <div class="overlay">
             <div class="overlay-text">
-              <a href="https://tools4css.vercel.app/" target="_blank"
-                >SEE MORE</a
-              >
+              <h3>Tools4CSS</h3>
+              <p> Tools to help developers build interfaces modern quickly</p>
+                <a href="https://tools4css.vercel.app/" target="_blank"
+                  >DEMO</a
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="row-project">
+          <div class="text-row">
+            <h5>InstaCasa (Current job)</h5>
+          </div>
+          <div class="overlay">
+            <div class="overlay-text">
+              <h3>InstaCasa</h3>
+              <p> This is my current job where I use nextJS, TypeScirpt and TailwindCSS</p>
+                <a href="https://instacasa.com.br" target="_blank"
+                  >DEMO</a
+                >
+              </h5>
             </div>
           </div>
         </div>
@@ -129,32 +161,17 @@
           </div>
           <div class="overlay">
             <div class="overlay-text">
-              <a
-                href="https://whatslinks.vercel.app/"
-                target="_blank"
-                >SEE MORE</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row-project">
-          <div class="text-row">
-            <h5>NFT UI</h5>
-          </div>
-          <div class="overlay">
-            <div class="overlay-text">
-              <a
-                href="https://nft-ui-with-metamask-auth.vercel.app/ "
-                target="_blank"
-                >SEE MORE</a
-              >
+              <h3>WhatLink</h3>
+              <p> Link generator for whatsapp with url shortener</p>
+                <a href="https://whatslinks.vercel.app" target="_blank"
+                  >DEMO</a
+                >
+              </h5>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- New Project-->
 
     <!-- Contact -->
 
@@ -231,7 +248,8 @@
       </div>
 
       <p class="made">
-        Made with ❤️ by <a href="http://linkedin.com/in/gomestzx" target="_blank">gomestzx</a>
+        Made with ❤️ by
+        <a href="http://linkedin.com/in/gomestzx" target="_blank">gomestzx</a>
       </p>
     </div>
   </body>

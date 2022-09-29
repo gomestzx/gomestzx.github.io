@@ -12,7 +12,21 @@
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #f3ede8;
+  background-image: linear-gradient(-80deg, #13161d, #14213d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Navbar */
@@ -41,7 +55,7 @@ body {
   padding: 20px 20px;
   text-decoration: none;
   font-weight: 400;
-  color: #13161d;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -125,7 +139,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -195,7 +209,7 @@ body {
   white-space: nowrap;
   margin-bottom: -1px;
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  color: #ea5656;
+  color: #fff;
 }
 
 .btns {
@@ -246,7 +260,7 @@ body {
   font-weight: 400;
   width: 520px;
   margin: 30px 0px;
-  color: #13161d;
+  color: #fff;
 }
 
 .item-about p a {
@@ -286,6 +300,7 @@ body {
 .social-icons {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .social-icons img {
@@ -436,6 +451,17 @@ body {
   border-radius: 8px;
 }
 
+.title-section {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: -2.1px;
+  white-space: nowrap;
+  margin-bottom: -1px;
+  margin-top: 60px;
+  text-align: center;
+  color: #ea5656;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -458,10 +484,32 @@ body {
   background-color: #ea5656;
 }
 
-.overlay-text a {
+.overlay-text {
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-text h3 {
   color: #fff;
-  font-weight: 900;
-  font-size: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.overlay-text a {
+  text-align: center;
+  background-color: #14213d;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.overlay-text p {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .row-project:hover .overlay {
@@ -474,14 +522,23 @@ body {
   background-size: cover;
 }
 .row-project:nth-child(2) {
-  background-image: url('./assets/wathsappLink.png');
+  background-image: url('./assets/instacasa.png');
   background-position: 47%;
   background-size: cover;
 }
 .row-project:nth-child(3) {
-  background-image: url('./assets/nft.png');
+  background-image: url('./assets/wathsappLink.png');
   background-position: 47%;
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .row-project:nth-child(2) {
+    margin-top: 40px;
+  }
+  .row-project:nth-child(3) {
+    margin-top: 80px;
+  }
 }
 
 .row-project h5 {
@@ -569,7 +626,7 @@ body {
 
 .item-contact h4 {
   font-size: 30px;
-  color: #13161d;
+  color: #fff;
 }
 
 .item-contact p {
@@ -582,7 +639,7 @@ body {
   text-align: center;
   padding: 15px 40px;
   border-radius: 30px;
-  color: #13161d;
+  color: #fff;
   font-weight: 400;
   margin: 25px;
   border: 2px solid #ea5656;
@@ -591,7 +648,7 @@ body {
 .made {
   margin-top: 30px;
   font-weight: 400;
-  color: #13161d;
+  color: #fff;
 }
 
 .made a {
