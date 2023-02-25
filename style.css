@@ -208,7 +208,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .btn-projects {
-  padding: 8px 30px;
+  padding: 15px 30px;
   border-radius: 8px;
   color: #fff;
   background-color: #007CF0;
@@ -678,8 +678,12 @@ form textarea {
   .skills h1 {
     font-size: 45px;
   }
-  .title-project h1 {
+  .title-project {
     font-size: 45px;
+  }
+  .title-section {
+    font-size: 45px;
+    margin-top: 45px;
   }
   .title-contact {
     font-size: 45px;
