@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio DEV - Felipe Matheus</title>
-   
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,171 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      h1 {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 40px;
-        margin-block: 6px;
-      }
 
-      h5 {
-        font-size: 22px;
-        font-weight: 500;
-        margin: 0;
-      }
-      p {
-        font-family: "Poppins", sans-serif;
-        font-size: 17px;
-        font-weight: 300;
-        color: #858282;
-        font-family: Poppins;
-        margin-bottom: 20px;
-        letter-spacing: 0.2px;
-        line-height: 23px;
-      }
-
-      a {
-        color: #0079ff;
-      }
-
-      .container {
-        max-width: 90%;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      @media (min-width: 768px) {
-        .container {
-          max-width: 50%;
-        }
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 auto;
-        gap: 20px;
-      }
-
-      .social-icons a {
-        color: #585757;
-        font-size: 30px;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      .social-icons a:hover {
-        color: #007bff;
-      }
-
-      .card-container {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .card {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 8px;
-        transition: background-color 1s ease;
-      }
-
-      .card:hover {
-        background: #f7f6f6;
-      }
-
-      .card h5,
-      .card i {
-        color: #000;
-        transition: transform 0.3s ease;
-      }
-
-      .card i {
-        margin-right: 10px;
-      }
-
-      .card:hover i {
-        transform: translate(5px, -5px);
-      }
-
-      .card p {
-        font-size: 16px;
-      }
-
-      .card-content {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        gap: 10px;
-      }
-
-      .card-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .img-card {
-        width: 80px;
-        height: 80px;
-        margin-top: 6px;
-        border-radius: 8px;
-      }
-
-      .techs {
-        display: flex;
-        gap: 4px;
-        flex-wrap: wrap;
-      }
-
-      .tech {
-        padding: 5px 10px;
-        height: -moz-fit-content;
-        height: fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-        border-radius: 10px;
-        font-size: 12px;
-      }
-
-      .nextjs {
-        background: rgb(235, 255, 235);
-        color: #58cd6a;
-      }
-
-      .tailwind {
-        background: #e9f9ff;
-        color: #2a9bff;
-      }
-
-      .nodejs {
-        background: #ffe5d9;
-        color: #ff5722;
-      }
-
-      .mongodb {
-        background: #f0e5ff;
-        color: #6a1b9a;
-      }
-
-      .typescript {
-        background: #fff7e4;
-        color: #f2a900;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -187,9 +24,15 @@
       <p>
         Sou desenvolvedor full-stack com experiência em ReactJS, NextJS, React
         Native e NodeJS. Tenho formação em Análise e Desenvolvimento de Sistemas
-        e trabalhei 1 ano em uma agência de software (<a href="https://mindage.com.br/" target="_blank">Mindage</a>) e 2 anos
-        em uma startup (<a href="https://instacasa.com.br" target="_blank">InstaCasa</a>). No meu tempo livre, desenvolvo
-        projetos paralelos, destacando-se o
+        e trabalhei 1 ano em uma agência de software (<a
+          href="https://mindage.com.br/"
+          target="_blank"
+          >Mindage</a
+        >) e 2 anos em uma startup (<a
+          href="https://instacasa.com.br"
+          target="_blank"
+          >InstaCasa</a
+        >). No meu tempo livre, desenvolvo projetos paralelos, destacando-se o
         <a href="https://livrosgratuitos.com" target="_blank"
           >Livros Gratuitos</a
         >
@@ -283,6 +126,58 @@
           </div>
         </a>
       </div>
+      <div class="contact">
+        <h6>Vamos desenvolver algo incrível juntos?</h6>
+        <button class="btn-contact">
+          <span>Entrar em contato <i class="fa-solid fa-message"></i> </span>
+        </button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <i class="fa-solid fa-xmark close"></i>
+        <a
+          href="https://www.linkedin.com/in/gomestzx/"
+          target="_blank"
+          title="LinkedIn"
+          class="social-button"
+        >
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/itsfematheus/"
+          target="_blank"
+          title="Instagram"
+          class="social-button"
+        >
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+        <a
+          href="https://wa.me/91993444646"
+          target="_blank"
+          title="WhatsApp"
+          class="social-button"
+        >
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+        <a
+          href="mailto:felipematheusdev@gmail.com"
+          title="Email"
+          class="social-button"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+          <i class="fa-solid fa-arrow-trend-up"></i>
+        </a>
+      </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
